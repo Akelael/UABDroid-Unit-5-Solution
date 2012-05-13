@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="org.uab.deic.uabdroid.solutions.unit5"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name=".MainActivity" >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".FormAppActivity">
+            <intent-filter>
+                <action android:name="org.uab.deic.uabdroid.solutions.unit5.action.OPEN_FORM"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".AppListActivity"/>
+        <activity android:name=".ParserActivity"/>
+        
+        <receiver android:name=".services.FormReceiver">
+            <intent-filter>
+                <action android:name="org.uab.deic.uabdroid.solutions.unit5.event.ADD_APP"/>
+            </intent-filter>
+        </receiver>
+        
+        <provider android:name=".services.AppProvider"
+            android:authorities="org.uab.deic.uabdroid.solutions.unit5.provider"
+        />
+        
+        <activity android:name=".services.AppLiveFolders$AppLiveFolder">
+            <intent-filter>
+                <action android:name="android.intent.action.CREATE_LIVE_FOLDER"/>
+            </intent-filter>
+        </activity>
+        
+        <receiver android:name=".services.AppWidget">
+            <intent-filter>
+				<action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+			</intent-filter>
+   			<meta-data android:name="android.appwidget.provider"
+				android:resource="@xml/app_widget_config"
+			/>
+        </receiver>
+        
+    </application>
+
+</manifest>

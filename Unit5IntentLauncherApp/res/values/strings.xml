@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Unit5IntentLauncher</string>
+    <string name="open_form">Obrir formulari</string>
+    <string name="open_form_by_receiver">Obrir formulari (BroadcastReceiver)</string>
+
+</resources>

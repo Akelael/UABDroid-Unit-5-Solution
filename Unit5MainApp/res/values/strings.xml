@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+	<!-- General -->
+    <string name="app_name">Unit5Example</string>
+	<!-- ******* -->
+
+	<!-- MainActivity -->
+    <string name="button_form_activity">Llista d\'aplicacions</string>
+    <!-- ************ -->
+    
+    <!-- Form Layout -->
+    <string name="textview_form_name">Nom: </string>
+    <string name="textview_form_developer">Desenvolupador: </string>
+    <string name="textview_form_date">Data: </string>
+    <string name="textview_form_url">URL: </string>
+    <string name="button_form_accept">Acceptar</string>
+    <string name="button_form_cancel">Cancelar</string>
+    <string name="button_form_clean">Netejar formulari</string>
+	<!-- ************* -->
+	
+	<!-- Live Folder -->
+	<string name="live_folder_name">Llista d\'aplicacions</string>
+	<!-- *********** -->
+	
+	<!--  Widget -->
+	<string name="app_widget_label">App Widget</string>
+	<string name="widget_no_name"> Fail!</string>
+	<string name="widget_no_developer">Encara no has enregistrat cap app :(</string>
+	<!-- ******* -->
+	
+	<!-- ParserActivity -->
+	<string name="button_text_parser_activity">Parseig d\'info.xml</string>
+	<!-- ************** -->
+
+</resources>
